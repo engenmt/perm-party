@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perm Party</title>
+    <link rel="stylesheet" href="sakura.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./utils.js"></script>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return false">
+        <legend>Avoidance Class</legend>
+        <fieldset>
+            <label for="basis">Basis</label>
+            <input id="basis" type="text" />
+            <label for="max-length">Max length</label>
+            <input id="max-length" type="number" min="1" max="9" />
+            <br />
+            <button type="button" onclick="enumerate()">Enumerate</button>
+        </fieldset>
+    </form>
+
+    <py-config hidden>
+        packages = ["permpy"]
+        terminal = false
+
+        [splashscreen]
+        enabled = true
+        autoclose = true
+
+        [[fetch]]
+        files = ["utils.py"]
+    </py-config>
+
+    <py-script src="./utils.py"></py-script>
+    <main>
+        <table>
+            <tbody id="table-enumeration">
+                <tr>
+                    <th>n</th>
+                    <th>c_n</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
