@@ -5,6 +5,10 @@
     font-family: 'Latin Modern Sans', system-ui, sans-serif;
 }
 
+html {
+    font-size: 1.2rem;
+}
+
 
 #table-enumeration {
     font-family: 'Latin Modern Mono', monospace;
@@ -13,10 +17,11 @@
 
 h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 body {
-    max-width: 30rem;
+    max-width: 20rem;
     margin: 0 auto;
 }
 
@@ -60,7 +65,8 @@ td {
 fieldset {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100% - 10px);
+    margin: 0 auto;
     font-size: 1.5rem;
 }
 
