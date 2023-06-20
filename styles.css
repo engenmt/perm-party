@@ -21,44 +21,41 @@ h1 {
 }
 
 body {
-    max-width: 20rem;
+    max-width: 40ch;
     margin: 0 auto;
 }
 
 table {
     table-layout: fixed;
-    column-rule: solid 6px;
     width: max-content;
     margin: 5px auto;
     border-collapse: collapse;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
 }
 
-th {
+thead {
     border-bottom: 1px solid;
 }
 
+td,
+th {
+    padding: 0 5px;
+}
+
 table td:first-child {
-    width: 2em;
+    width: 2ch;
 }
 
 table th:not(:first-child),
 table td:not(:first-child) {
-    min-width: 6rem;
+    min-width: 5ch;
+    border-left: 1px solid;
 }
 
-th,
-td {
-    border-right: 1px solid;
+tbody th,
+tbody td {
     width: max-content;
-}
-
-table th:last-child,
-table td:last-child {
-    border-right: unset;
-}
-
-td {
+    vertical-align: baseline;
     font-family: monospace;
 }
 

@@ -28,7 +28,7 @@
         [[fetch]]
         files = ["utils.py"]
     </py-config>
-    <py-script src="./utils.py"></py-script>
+    <py-script src="./enumerate.py"></py-script>
 
     <main>
         <h1>Permutation Party!</h1>
@@ -47,34 +47,54 @@
             </fieldset>
         </form>
         <table id="table-enumeration">
-            <tr>
-                <th scope="col">
-                    <math>
-                        <mi>n</mi>
-                    </math>
-                </th>
-                <th scope="col">
-                    <math>
-                        <msub>
-                            <mi>c</mi>
+            <thead>
+                <tr>
+                    <th scope="col" id="table-head-n">
+                        <math>
                             <mi>n</mi>
-                        </msub>
-                    </math>
-                </th>
-                <th scope="col">
-                    <math>
-                        <mroot>
+                        </math>
+                    </th>
+                    <th scope="col" id="table-head-cn">
+                        <math>
                             <msub>
                                 <mi>c</mi>
                                 <mi>n</mi>
                             </msub>
-                            <mi>
-                                n
-                            </mi>
-                        </mroot>
-                    </math>
-                </th>
-            </tr>
+                        </math>
+                    </th>
+                    <th scope="col" id="table-head-root-cn">
+                        <math>
+                            <mroot>
+                                <msub>
+                                    <mi>c</mi>
+                                    <mi>n</mi>
+                                </msub>
+                                <mi>
+                                    n
+                                </mi>
+                            </mroot>
+                        </math>
+                    </th>
+                    <th scope="col" id="table-head-ratio">
+                        <math>
+                            <msub>
+                                <mi>c</mi>
+                                <mi>n</mi>
+                            </msub>
+                            /
+                            <msub>
+                                <mi>c</mi>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mo>-</mo>
+                                    <mi>1</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
         </table>
     </main>
 </body>
