@@ -32,10 +32,16 @@
 
     <main>
         <h1>Permutation Party!</h1>
+        <!-- <div id="controls"> -->
         <form onsubmit="return false">
             <legend>Avoidance Class</legend>
             <fieldset>
-                <label for="basis">Basis</label>
+                <label for="basis">
+                    Basis
+                    <span>
+                        (comma-separated)
+                    </span>
+                </label>
                 <input id="basis" type="text" />
                 <div class="break"></div>
                 <label for="max-length">Max length</label>
@@ -46,6 +52,7 @@
                 </button>
             </fieldset>
         </form>
+        <!-- </div> -->
         <table id="table-enumeration">
             <thead>
                 <tr>
@@ -69,9 +76,9 @@
                                     <mi>c</mi>
                                     <mi>n</mi>
                                 </msub>
-                                <mi>
-                                    n
-                                </mi>
+                                <mpadded lspace="5px" voffset="5px">
+                                    <mi>n</mi>
+                                </mpadded>
                             </mroot>
                         </math>
                     </th>
@@ -81,13 +88,13 @@
                                 <mi>c</mi>
                                 <mi>n</mi>
                             </msub>
-                            /
+                            <mo>/</mo>
                             <msub>
                                 <mi>c</mi>
                                 <mrow>
                                     <mi>n</mi>
-                                    <mo>-</mo>
-                                    <mi>1</mi>
+                                    <mo>&#x2212;</mo>
+                                    <mn>1</mn>
                                 </mrow>
                             </msub>
                         </math>
